@@ -6,7 +6,7 @@ import { Button, Paper } from '@mui/material';
 
 export default function Student() {
     const paperStyle={padding: '100px, 40px',width:600, margin:"20px auto"}
-    const[name,setName]=React.useState('')
+    const[name,setName]=React.useState('','\n')
     const[address,setAddress]=React.useState('')
     const[student,setStudents]=React.useState([])
     
