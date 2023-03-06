@@ -21,6 +21,11 @@ export default function Student() {
     }).then(()=>{
         console.log("New Student Added")
     })
+        .catch(function(error) {
+      console.log('There has been a problem with your fetch operation: ' + error.message);
+       // ADD THIS THROW error
+        throw error;
+      });
     window.location.reload(false);
 }
 
